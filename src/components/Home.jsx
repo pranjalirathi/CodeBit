@@ -1,12 +1,12 @@
-import { AppBar, Toolbar } from '@mui/material';
+import Header from '../components/Header'
+import Code from '../components/Code'
 
 const Home = () => {
     return (
-        <AppBar>
-            <Toolbar>
-                hello
-            </Toolbar>
-        </AppBar>
+        <>
+            <Header/>
+            <Code/>
+        </>
     )
 }
 
