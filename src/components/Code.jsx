@@ -1,10 +1,12 @@
-
+import Editor from '../components/Editor';
 
 const Code = () => {
     return (
-        <div>
-            hello from code
-        </div>
+        <>
+          <Editor/>
+          <Editor/>
+          <Editor/>
+        </>
     )
 }
 
