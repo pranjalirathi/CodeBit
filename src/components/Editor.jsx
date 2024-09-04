@@ -44,7 +44,7 @@ const Editor = ({heading, icon, color, value, onChange}) => {
 
 
     return (
-        <Container>
+        <Container style={ open ? null : { flexGrow: 0}}>
             <Header>
                 <Heading>
                     <Box
@@ -63,7 +63,7 @@ const Editor = ({heading, icon, color, value, onChange}) => {
                     </Box>
                     {heading}
                 </Heading>
-                <CloseFullScreenIcon onClick={() => setOpen(prevState => !prevState)}/>
+                <CloseFullScreenIcon fontSize='small' style={{alignSelf: "center"}} onClick={() => setOpen(prevState => !prevState)}/>
             </Header>
             <ControlledEditor 
                 className='controlled-editor'
