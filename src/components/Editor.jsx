@@ -9,7 +9,6 @@ import 'codemirror/mode/css/css';
 
 import '../App.css';
 
-
 const Heading = styled(Box)`
   background: #1d1e22;
   display: flex;
@@ -22,28 +21,29 @@ const Header = styled(Box)`
   background: #060606;
   color: #AAAEBC;
   justify-content: space-between;
-  font-weight: 
+  font-weight: 700
 `
 
-const Editor = () => {
+const Editor = ({heading, icon, color}) => {
     return (
-        <Box>
+        <Container>
             <Header>
                 <Heading>
                     <Box
                       component="span"
-                      style={{background: 'red',
+                      style={{background: color,
                               height: 20,
                               width: 20,
                               display: 'flex',
                               placeContent: 'center',
                               borderRadius: 5,
                               marginRight: 5,
-                              paddingBottom: 2
+                              paddingBottom: 2,
+                              color: '#000'
                       }}
-                    >/
+                    >{icon}
                     </Box>
-                    HTML
+                    {heading}
                 </Heading>
                 <CloseFullScreenIcon/>
             </Header>
@@ -54,7 +54,7 @@ const Editor = () => {
                     lineNumbers: true
                 }}
             />
-        </Box>
+        </Container>
     )
 }
 
