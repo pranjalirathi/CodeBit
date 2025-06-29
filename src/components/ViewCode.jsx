@@ -15,9 +15,13 @@ const ViewCode = () => {
 
     const src = 
       `<html>
-        <body>${html}</body>
-        <style>${css}</style>
-        <script>${js}</script>
+        <head>
+          <style>${css}</style>
+        </head>
+        <body>
+          ${html}
+          <script>${js}</script>
+        </body>
       </html>
       `
 
@@ -27,7 +31,7 @@ const ViewCode = () => {
         }, 1000)
 
         return () => clearTimeout(timeout);
-    }, [html, css, js])
+    }, [src])
 
     return (
         <Container>
