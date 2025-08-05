@@ -30,10 +30,6 @@ codebit/
 ├── public/
 │   ├── favicon.ico          # Website favicon
 │   ├── index.html          # Main HTML template
-│   ├── logo192.png         # PWA icon (192x192)
-│   ├── logo512.png         # PWA icon (512x512)
-│   ├── manifest.json       # PWA manifest
-│   └── robots.txt          # Search engine crawling rules
 ├── src/
 │   ├── components/         # React components
 │   │   ├── Code.jsx        # Main code editors container
