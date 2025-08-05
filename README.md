@@ -2,7 +2,6 @@
 
 A modern, responsive web-based code editor built with React that allows you to write HTML, CSS, and JavaScript with real-time preview. Perfect for quick prototyping, learning, and experimenting with web technologies.
 
-![CodeBit Logo](./src/assets/code.png)
 
 ## ✨ Features
 
